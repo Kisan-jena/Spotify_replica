@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(16, 15, 15);
+    color: azure;
+} 
+
+/*-----------------------------------*\
+  LEFT PORTION-1
+\*-----------------------------------*/
+
+.left{
+    padding:10px;
+    width: 24vw;
+}
+
+.logo{
+    gap: 3px;
+    align-items: center;
+    padding-left:8px;
+}
+
+
+.home ul li{
+    padding-top: 10px;
+}
+
+.home ul {
+    gap:2px;
+    list-style: none;
+    padding-left:8px;
+    margin: 0px;
+    display: flex; 
+    flex-direction: column; 
+    font-weight: bold;
+}
+
+li,a {
+    text-decoration: none;
+    padding-bottom:0px;
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+/*-----------------------------------*\
+  LEFT PORTION-2
+\*-----------------------------------*/
+
+.library{
+    position:relative ;
+    min-height: 80vh;
+}
+
+.heading ul{
+    text-decoration: none;
+    padding-bottom:0px;
+    display: flex; 
+    gap: 10px; 
+}
+
+.heading{
+    padding:8px 40px;
+}
+
+.footer{
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 27px;
+    padding-bottom: 12px ;
+}
+
+.footer a{
+    color: gray;
+}
+
+/*-----------------------------------*\
+  RIGHT PORTION-1
+\*-----------------------------------*/
+
+.right{
+    width: 76vw;
+    padding:0px;
+    margin: 14px 0px;
+    max-height: 100vh;
+    position: relative;
+}
+
+.header{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > *{
+    padding: 12px;
+}
+
+/* General button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 30px; /* Rounded edges */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    outline: none;
+}
+
+/* Sign-Up button */
+.sign-In {
+    background-color: #1db954; /* Spotify green */
+    color: white;
+}
+
+.sign-In:hover {
+    background-color: #1aa34a; /* Slightly darker green on hover */
+    transform: translateY(-2px); /* Button lift on hover */
+}
+
+/* Log-In button */
+.log-In {
+    background-color: #333; /* Dark background */
+    color: #b3b3b3; /* Light grey text */
+    border: 1px solid #444; /* Border for the dark button */
+}
+
+.log-In:hover {
+    background-color: #444; /* Lighter dark shade on hover */
+    color: white;
+    transform: translateY(-2px); /* Button lift on hover */
+}
+
+
+/*-----------------------------------*\
+  RIGHT PORTION-2
+\*-----------------------------------*/
+
+.playlist{
+    padding: 12px;
+}
+
+.cardCointainer {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
+
+    /* Scrollbar styling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+}
+
+.cardCointainer::-webkit-scrollbar {
+    display: none; /* For Chrome, Brave, Safari, and Opera */
+
+}
+
+.cardCointainer::-webkit-scrollbar-track {
+    background: #222; /* Dark background for the scrollbar track */
+    border-radius: 50px; /* Curve the track */
+}
+
+.cardCointainer::-webkit-scrollbar-thumb {
+    background: #444; /* Darker thumb for the scrollbar */
+    border-radius: 50px; /* Curve the thumb */
+    border: 2px solid #222; /* Add a border to match the track background */
+}
+
+.cardCointainer::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Slightly lighter thumb on hover for visibility */
+}
+
+
+.card{
+    width:200px;
+    padding: 10px;
+    border-radius:5px;
+    background-color:#252525 ;
+    position: relative;
+}
+
+.card > *{
+    padding-top: 7px;
+}
+
+.card img{
+    width: 100%;
+    object-fit:contain ;
+}
+
+.play {
+    width: 50px;
+    height: 45px;
+    background-color: #258d49; /* Spotify green */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+    cursor: pointer;
+    position: absolute;
+    top: 220px;
+    right: 17px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.play ion-icon {
+    padding-left:3px ;
+    padding-bottom: 5px;
+    color: rgb(30, 29, 29); /* Icon color */
+    font-size: 30px; /* Adjust icon size */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+/*-----------------------------------*\
+  RIGHT PORTION-3
+\*-----------------------------------*/
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(139,193,139);
+    width: 100%;
+    padding: 12px;
+}
+
+.songsbuttons{
+    color: #000000;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+
+
+/*-----------------------------------*\
+  MEDIA QUERIES
+\*-----------------------------------*/
+
+
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+    .left {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .right {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .home ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cardContainer {
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .footer {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .playbar {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    .left {
+        width: 100%;
+        height: auto;
+        position: static;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .right {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .footer {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .playbar {
+        width: 100%;
+        padding: 10px;
+    }
+}

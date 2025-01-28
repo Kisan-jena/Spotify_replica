@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
+
+</head>
+<body>
+    <!-- Spotify SVG -->
+    <!-- <svg role="img" viewBox="0 0 24 24" aria-label="Spotify" aria-hidden="false" height="32" data-encore-id="logoSpotify" class="Svg-sc-6c3c1v-0 dDJltW">
+        <title>Spotify</title>
+        <path d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546" />
+    </svg> -->
+
+    <div class="container flex bg-black">
+
+        <div class="left ">
+            
+            <div class="home bg-grey rounded m-1 p-1">
+
+                <div class="logo flex ">
+                    <i class="fi fi-brands-spotify" style="font-size: 28px; color: rgb(24, 199, 35);"></i>
+                    <h4 class="logo-name" style="color: #ffffff;" >Spotify</h4>
+                </div>
+
+                <ul>
+                    <li>
+                        <ion-icon name="home-outline"  style="font-size: 22px; color: #ffffff; "></ion-icon>
+                        <a href="#" style="color: #ffffff;">Home</a>
+                    </li>
+                    <li>
+                        <ion-icon name="search-outline" style="font-size: 22px; color: #ffffff; "></ion-icon>
+                        <a href="#" style="color: #ffffff;">Search</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1 ">
+
+            <div class="heading">
+                <ul>
+                    <li>
+                        <ion-icon name="library-outline" style="font-size: 22px; color: #ffffff;"></ion-icon>
+                        <a href="#" style="color: #ffffff;">Your Library</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/privacy-policy#3"><span>About Ads</span></a></div>
+                <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+            </div>
+
+            </div>
+
+        </div>
+ 
+        <div class="right bg-grey rounded ">
+
+            <div class="header">
+                <div class="nav">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+
+                <div class="buttons">
+                    <button class="sign-In">sign up</button>
+                    <button class="log-In" >log in</button>
+                </div>
+            </div>
+
+            <div class="playlist">
+                <h2 style="margin-left: 11px;" >Spotify Playlist</h2>
+
+                <div class="cardCointainer">
+
+                    <div class="card">
+                        <div class="play">
+                            <ion-icon name="play"></ion-icon>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/2/ab6761610000e5ebfb1618c778af375c0e42033b/en" alt="">
+                        <h2>Happy Hits!!</h2>
+                        <p>hits to boost your mood and fill you with happiness</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <ion-icon name="play"></ion-icon>
+                        </div>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/2/ab6761610000e5ebfb1618c778af375c0e42033b/en" alt="">
+                        <h2>Happy Hits!!</h2>
+                        <p>hits to boost your mood and fill you with happiness</p>
+                    </div>
+
+                </div>
+                
+                <div class="playbar">
+                    <div class="songinfo">
+
+                    </div>
+                    
+                    <div class="songsbuttons">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                        <ion-icon name="play-skip-back-outline"></ion-icon>
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                        <!-- <ion-icon name="pause-circle-outline"></ion-icon> -->
+                        <ion-icon name="play-skip-forward-outline"></ion-icon>
+                        <ion-icon name="refresh-outline"></ion-icon>
+                    </div>
+
+                    <div class="timestamp">
+
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
